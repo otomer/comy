@@ -1,0 +1,22 @@
+{
+  "name": "comy",
+  "version": "0.1.0",
+  "description": "Doing something",
+  "license": "MIT",
+  "repository": "otomer/comy",
+  "main": "index.js",
+  "keywords": [
+    "comy",
+    "npm",
+    "package",
+    "choose",
+    "random",
+    "pick",
+    "counting",
+    "probability",
+    "combinatorics"
+  ],
+  "dependencies": {
+    "user": "0.0.0"
+  }
+}
