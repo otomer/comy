@@ -6,7 +6,7 @@ Comy - a sort of glorified dice-throwing
 </h2>
 
 [![npm](https://img.shields.io/npm/v/comy.svg)](https://www.npmjs.com/package/comy)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react.svg)](https://www.npmjs.com/package/comy)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/comy.svg)](https://www.npmjs.com/package/comy)
 
 ---
 
