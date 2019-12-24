@@ -1,5 +1,5 @@
 <h1 align="center">
-	 <a href="https://github.com/otomer/comy"><img src="https://i.ibb.co/0VfJnzX/comy.png" alt="Comy - A sort of glorified dice-throwing" width=200"></a>
+	 <a href="https://github.com/otomer/comy"><img src="comy.png" alt="Comy - A sort of glorified dice-throwing" width=200"></a>
 </h1>
 <h2 align="center">
 Comy - a sort of glorified dice-throwing
