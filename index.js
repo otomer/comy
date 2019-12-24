@@ -1,17 +1,17 @@
 const {
-  cloneArray,
-  createSequence,
-  chunkArray,
-  sortByAttribute
+  ArrayManipulation,
+  ArrayCreation,
+  ArraySorting
 } = require("algoritool");
 
 // ****************
 // *** Exported ***
 // ****************
-const shuffle = array => cloneArray(array).sort(() => Math.random() - 0.5);
+const shuffle = array =>
+  ArrayManipulation.clone(array).sort(() => Math.random() - 0.5);
 
 const pickNumbers = (from, to, size) => {
-  const sequence = createSequence(to - from + 1, from);
+  const sequence = ArrayCreation.sequence(to - from + 1, from);
   const shuffled = shuffle(sequence);
   return shuffled.slice(0, size);
 };
@@ -26,9 +26,9 @@ const pickHexColor = () => {
 };
 
 const priorityGroups = (arr, numOfGroups, attr = "priority") => {
-  arr = cloneArray(arr);
+  arr = ArrayManipulation.clone(arr);
   shuffledArray = shuffle(arr);
-  const arrSorted = sortByAttribute(shuffledArray, attr);
+  const arrSorted = ArraySorting.byAttribute(shuffledArray, attr);
   const groups = [];
   let index = 0;
   while (arrSorted.length > 0) {
@@ -49,7 +49,7 @@ const priorityGroups = (arr, numOfGroups, attr = "priority") => {
 const groups = (arr, numOfGroups) => {
   shuffledArray = shuffle(arr);
   const chunkSize = shuffledArray.length / numOfGroups;
-  arrayChunks = chunkArray(shuffledArray, chunkSize);
+  arrayChunks = ArrayManipulation.chunksSplit(shuffledArray, chunkSize);
   return arrayChunks;
 };
 
