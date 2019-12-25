@@ -13,7 +13,7 @@ Comy - a sort of glorified dice-throwing
 
 ## Introduction
 
-TBD
+Combinatorial algorithms are computational procedures which are designed to help solve combinatorial problems.
 
 ## Install
 
@@ -23,18 +23,51 @@ $ npm install comy
 
 ## Usage
 
-```
+```javascript
 const comy = require("comy");
+
+// Specific example:
+const { priorityGroups } = require("comy");
+const arr = [
+  { name: "Michael", priority: 1 },
+  { name: "Murphy", priority: 2 },
+  { name: "Capone", priority: 3 },
+  { name: "Donnie", priority: 1 },
+  { name: "Koby", priority: 2 },
+  { name: "Felis", priority: 3 }
+];
+
+//Split the arr into 2 balanced groups by priority
+console.log(priorityGroups(arr, 2, "priority"));
+/* Possible output:
+[
+  [ { name: 'Donnie', priority: 1 },
+    { name: 'Koby', priority: 2 },
+    { name: 'Felis', priority: 3 }
+  ],
+  [
+    { name: 'Michael', priority: 1 },
+    { name: 'Murphy', priority: 2 },
+    { name: 'Capone', priority: 3 }
+  ]
+]
+*/
 ```
 
 ---
 
 ## Methods
 
-1. `shuffle: (array: any) => any[]`
-2. `pickNumbers: (from: any, to: any, size: any) => any[]`
-3. `pickHexColor: () => string`
-4. `priorityGroups: (arr: any, numOfGroups: any, attr?: string) => any[][]`
-5. `groups: (arr: any, numOfGroups: any) => any`
-6. `random: (arr: any) => any`
-7. `generateString: () => string`
+```typescript
+shuffle: (array: any) => any[]
+pickNumbers: (from: any, to: any, size: any) => any[]
+pickHexColor: () => string
+priorityGroups: (arr: any, numOfGroups: any, attr?: string) => any[][]
+groups: (arr: any, numOfGroups: any) => any
+random: (arr: any) => any
+generateString: () => string
+```
+
+---
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/otomer/comy)

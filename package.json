@@ -1,6 +1,6 @@
 {
   "name": "comy",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Doing something",
   "license": "MIT",
   "repository": "otomer/comy",
@@ -17,7 +17,7 @@
     "combinatorics"
   ],
   "dependencies": {
-    "algoritool": "^0.1.9",
+    "algoritool": "^0.1.10",
     "user": "0.0.0"
   }
 }
