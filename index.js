@@ -62,7 +62,6 @@ const generateString = () =>
     .substring(2, 15);
 
 module.exports = {
-  shuffle,
   pickNumbers,
   pickHexColor,
   priorityGroups,
