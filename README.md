@@ -59,7 +59,6 @@ console.log(priorityGroups(arr, 2, "priority"));
 ## Methods
 
 ```typescript
-shuffle: (array: any) => any[]
 pickNumbers: (from: any, to: any, size: any) => any[]
 pickHexColor: () => string
 priorityGroups: (arr: any, numOfGroups: any, attr?: string) => any[][]

@@ -7,21 +7,10 @@ const {
 // ****************
 // *** Exported ***
 // ****************
-const shuffle = arr => {
-  const arrLength = arr.length;
-  const shuffled = ArrayManipulation.clone(arr);
-
-  for (let i = arrLength - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  return shuffled;
-};
 
 const pickNumbers = (from, to, size) => {
   const sequence = ArrayCreation.sequence(to - from + 1, from);
-  const shuffled = shuffle(sequence);
+  const shuffled = ArrayManipulation.shuffle(sequence);
   return shuffled.slice(0, size);
 };
 
