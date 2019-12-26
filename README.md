@@ -64,7 +64,6 @@ pickRandom: (arr: any, n?: number) => any
 pickHexColor: () => string
 priorityGroups: (arr: any, numOfGroups: any, attr?: string) => any[][]
 groups: (arr: any, numOfGroups: any) => any
-random: (arr: any) => any
 generateString: () => string
 ```
 

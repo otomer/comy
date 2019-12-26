@@ -63,8 +63,6 @@ const groups = (arr, numOfGroups) => {
   return arrayChunks;
 };
 
-const random = arr => arr[Math.floor(Math.random() * arr.length)];
-
 const generateString = () =>
   Math.random()
     .toString(36)
@@ -79,6 +77,5 @@ module.exports = {
   pickHexColor,
   priorityGroups,
   groups,
-  random,
   generateString
 };
