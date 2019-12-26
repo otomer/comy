@@ -2,14 +2,7 @@
 # yarn lockfile v1
 
 
-algoritool@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/algoritool/-/algoritool-0.1.10.tgz#7b23f1732dbbb177fa0950215dd67026df948861"
-  integrity sha512-KH+oM2KFDiPU5lYkv4p0W6u4Iez9Boz3+VNG9NuK18tjae4CEVmqE9i/iGWGSyW8Y9VXWuRodwYd10Rp3yzirQ==
-  dependencies:
-    user "0.0.0"
-
-user@0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/user/-/user-0.0.0.tgz#f27f1b23fc511f2a8efa40db55cfba123824e02a"
-  integrity sha1-8n8bI/xRHyqO+kDbVc+6Ejgk4Co=
+algoritool@^0.1.12:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/algoritool/-/algoritool-0.1.12.tgz#5136918070a22d23389991aa36997858d1bcc6b0"
+  integrity sha512-xRLnhFGdQnITzHdz6cLXawsTg9skUJnToMNMtgCDpIZthMHlrTAzNwLJRD3x1GDCYFLHCigqYuf1IUedh10N5w==

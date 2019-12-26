@@ -7,8 +7,17 @@ const {
 // ****************
 // *** Exported ***
 // ****************
-const shuffle = array =>
-  ArrayManipulation.clone(array).sort(() => Math.random() - 0.5);
+const shuffle = arr => {
+  const arrLength = arr.length;
+  const shuffled = ArrayManipulation.clone(arr);
+
+  for (let i = arrLength - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+};
 
 const pickNumbers = (from, to, size) => {
   const sequence = ArrayCreation.sequence(to - from + 1, from);
@@ -72,7 +81,3 @@ module.exports = {
   random,
   generateString
 };
-
----
-
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/otomer/algoritool)
