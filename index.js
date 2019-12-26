@@ -24,7 +24,6 @@ const pickHexColor = () => {
 };
 
 const priorityGroups = (arr, numOfGroups, attr = "priority") => {
-  arr = ArrayManipulation.clone(arr);
   shuffledArray = ArrayManipulation.shuffle(arr);
   const arrSorted = ArraySorting.byAttribute(shuffledArray, attr);
   const groups = [];
