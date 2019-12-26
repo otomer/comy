@@ -60,6 +60,7 @@ console.log(priorityGroups(arr, 2, "priority"));
 
 ```typescript
 pickNumbers: (from: any, to: any, size: any) => any[]
+pickRandom: (arr: any, n?: number) => any
 pickHexColor: () => string
 priorityGroups: (arr: any, numOfGroups: any, attr?: string) => any[][]
 groups: (arr: any, numOfGroups: any) => any

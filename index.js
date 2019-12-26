@@ -10,8 +10,7 @@ const {
 
 const pickNumbers = (from, to, size) => {
   const sequence = ArrayCreation.sequence(to - from + 1, from);
-  const shuffled = ArrayManipulation.shuffle(sequence);
-  return shuffled.slice(0, size);
+  return pickRandom(sequence, size);
 };
 
 const pickHexColor = () => {
@@ -21,6 +20,20 @@ const pickHexColor = () => {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
+};
+
+const pickRandom = (arr, n = 1) => {
+  let arrLength = arr.length;
+
+  for (let i = 0; i < n; i++) {
+    const randomIndex = Math.floor(Math.random() * arrLength);
+    const item = arr[randomIndex];
+    arrLength--;
+    arr[randomIndex] = arr[arrLength];
+    arr[arrLength] = item;
+  }
+
+  return arr.slice(-n);
 };
 
 const priorityGroups = (arr, numOfGroups, attr = "priority") => {
@@ -62,6 +75,7 @@ const generateString = () =>
 
 module.exports = {
   pickNumbers,
+  pickRandom,
   pickHexColor,
   priorityGroups,
   groups,
